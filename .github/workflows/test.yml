@@ -1,0 +1,12 @@
+name: This is test
+on:
+  workflow_dispatch
+jobs:
+  Runner:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      uses: actions/checkout@v3
+    - name: script
+      run: |
+        echo test
