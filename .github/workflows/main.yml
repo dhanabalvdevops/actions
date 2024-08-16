@@ -1,0 +1,13 @@
+name: "this is test job"
+on: [push]
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run a test script
+      run: |
+        echo This is my first 
+        echo testing
+    
